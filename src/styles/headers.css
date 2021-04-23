@@ -1,0 +1,18 @@
+h2 {
+  color: blue;
+  text-transform: lowercase;
+  font-size: 25px;
+}
+.header-item {
+  font-size: 14px;
+  text-transform: uppercase !important;
+}
+
+.headers-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headers-icons .icons-font {
+  margin: 10px;
+}
