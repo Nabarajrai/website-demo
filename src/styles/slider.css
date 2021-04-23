@@ -1,0 +1,11 @@
+.sliders {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.items {
+  position: absolute;
+  width: 90%;
+}

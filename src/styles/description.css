@@ -1,0 +1,31 @@
+.product .product-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-content button {
+  display: block;
+}
+
+.product {
+  position: relative;
+}
+.product-content Button {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  background-color: #ffff;
+  color: #000;
+  font-size: 15px;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+}
