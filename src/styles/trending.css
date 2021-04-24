@@ -29,3 +29,9 @@
   padding: 10px;
   transition: padding 0.9s;
 }
+@media (max-width: 576px) {
+  .trending img {
+    max-width: 90% !important;
+    max-height: 90% !important;
+  }
+}

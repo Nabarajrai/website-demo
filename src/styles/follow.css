@@ -33,3 +33,22 @@
   font-weight: 300;
   opacity: 0.9;
 }
+@media (max-width: 576px) {
+  .follow-grid {
+    display: block !important;
+    margin-left: 10px;
+  }
+  .follow-icon {
+    margin-right: 10px;
+  }
+  .follow-description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .follow-grid {
+    display: block !important;
+    margin-left: -50px;
+    margin-bottom: 90px;
+  }
+}

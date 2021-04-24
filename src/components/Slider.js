@@ -7,20 +7,13 @@ const Slider = ({ title, color, color1, img, description1, description }) => {
     <Section container={false}>
       <div className="sliders">
         <div className="items">
-          <div>
-            <h3
-              style={{ color: color && color, fontSize: "45px" }}
-              className="title"
-            >
+          <div className="sliders-description">
+            <h3 style={{ color: color && color }} className="title">
               {title}
             </h3>
             <h1
               style={{
                 color: color1 && color1,
-                fontSize: "80px",
-                maxWidth: "600px",
-                margin: "auto",
-                justifyContent: "center",
               }}
             >
               {description}
