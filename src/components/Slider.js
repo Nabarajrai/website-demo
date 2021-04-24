@@ -23,7 +23,7 @@ const Slider = ({ title, color, color1, img, description1, description }) => {
           </div>
         </div>
         <div className="slider-image">
-          <img className="img-fluid" src={img} />
+          <img className="img-fluid" src={img} alt={title} />
         </div>
       </div>
     </Section>

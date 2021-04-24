@@ -9,7 +9,6 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import Section from "../components/section";
 import useScrollPosition from "@react-hook/window-scroll";
 import className from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

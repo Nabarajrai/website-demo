@@ -115,6 +115,7 @@
     z-index: 1;
   }
 }
+
 @media (max-width: 768px) {
   .description-grid {
     grid-template-columns: repeat(2, 1fr);

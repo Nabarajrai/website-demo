@@ -11,7 +11,6 @@ import Section from "../components/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
-import { faGoggle } from "@fortawesome/free-brands-svg-icons/faGoogle";
 import "../styles/footer.css";
 
 const Footers = () => {
