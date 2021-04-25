@@ -9,14 +9,13 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import Section from "../components/section";
+import NavLink from "./NavLink";
+import "../styles/headers.css";
 import useScrollPosition from "@react-hook/window-scroll";
 import className from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
-import NavLink from "./NavLink";
-import "../styles/headers.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 import { faLock } from "@fortawesome/free-solid-svg-icons/faLock";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";

@@ -9,6 +9,7 @@
 .trending h4 {
   font-size: 15px;
 }
+
 .trending {
   text-align: center;
   line-height: 1;
@@ -26,6 +27,30 @@
   position: absolute;
   bottom: -10px;
   width: 300px;
+}
+.des-items:hover {
   padding: 10px;
-  transition: padding 0.9s;
+  transition: padding 0.1s ease-in;
+}
+.image-trending:hover {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 576px) {
+  .trending img {
+    max-width: 90% !important;
+    max-height: 90% !important;
+  }
 }

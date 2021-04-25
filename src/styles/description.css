@@ -29,3 +29,8 @@
   text-transform: uppercase;
   border: none;
 }
+@media (max-width: 576px) {
+  img {
+    margin-top: 10px;
+  }
+}

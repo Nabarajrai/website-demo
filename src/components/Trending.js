@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "reactstrap";
-
 import "../styles/trending.css";
+
 const Trending = ({ title, description, price, image, image2 }) => {
   const [mouseOver, setMouseOver] = useState(false);
 
@@ -20,7 +20,7 @@ const Trending = ({ title, description, price, image, image2 }) => {
       onMouseLeave={handleMouseLeave}
     >
       <img
-        className="img-fluid "
+        className="img-fluid image-trending "
         src={mouseOver ? image2 : image}
         alt={title}
       />

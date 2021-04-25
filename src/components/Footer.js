@@ -8,16 +8,15 @@ import {
   Input,
 } from "reactstrap";
 import Section from "../components/section";
+import "../styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
-import { faGoggle } from "@fortawesome/free-brands-svg-icons/faGoogle";
-import "../styles/footer.css";
 
 const Footers = () => {
   return (
     <div className="footers">
-      <div className=" clearfix">
+      <div className=" clearfix footer-section">
         <div className="float-left">
           <span className="logo">wikee</span>
           <span className="logo-footer">
@@ -45,7 +44,7 @@ const Footers = () => {
 const Footer = () => {
   return (
     <div className="footer-content">
-      <div className="content">
+      <div className="content ">
         <Row>
           <Col>
             <h4 className="footer-description">BE IN TOUCH WITH US</h4>
@@ -79,7 +78,7 @@ const Footer = () => {
       <Section>
         <div className="main-content">
           <Row>
-            <Col className="section1">
+            <Col lg={3} md={6} sm={12} className="section1 ">
               <h4>CATEGORIES</h4>
               <ul>
                 <li>Women</li>
@@ -90,7 +89,7 @@ const Footer = () => {
                 <li>Women</li>
               </ul>
             </Col>
-            <Col className="section1">
+            <Col lg={3} md={6} sm={12} className="section1 sm-12">
               <h4>MY ACCOUNT</h4>
               <ul>
                 <li> Orders</li>
@@ -100,7 +99,7 @@ const Footer = () => {
                 <li> Register</li>
               </ul>
             </Col>
-            <Col className="section3">
+            <Col lg={3} md={6} sm={12} className="section3">
               <h4>ABOUT</h4>
               <p>
                 Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
@@ -109,7 +108,7 @@ const Footer = () => {
                 incididunt ut labore etdolore.
               </p>
             </Col>
-            <Col className="section3">
+            <Col lg={3} md={6} sm={12} className="section3">
               <h4>CONTACTS</h4>
               <p>
                 Address: 2548 Broaddus Maple Court Avenue, Madisonville KY 4783,

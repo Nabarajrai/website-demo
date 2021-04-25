@@ -1,5 +1,4 @@
 import React from "react";
-import promo1 from "../images/promos/index-promo-img-07.jpg";
 import "../styles/promo.css";
 
 const Promo = ({ title, description, image }) => {

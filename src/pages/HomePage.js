@@ -1,13 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Section from "../components/section";
-import slide1 from "../images/slide/slide-01.jpg";
-import slide2 from "../images/slide/slide-02.jpg";
+import Description from "../components/Description";
+import Trending from "../components/Trending";
+import Promo from "../components/Promo";
 import SlideImage from "../components/Slider";
 import "../styles/homePage.css";
-// import { Row, Col } from "reactstrap";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import slide1 from "../images/slide/slide-01.jpg";
+import slide2 from "../images/slide/slide-02.jpg";
 import image1 from "../images/promo/index-promo-img-01.jpg";
 import image2 from "../images/promo/index-promo-img-02.jpg";
 import image3 from "../images/promo/index-promo-img-03.jpg";
@@ -33,17 +34,22 @@ import productflip8 from "../images/product/product-15-01.jpg";
 import promo1 from "../images/promos/index-promo-img-07.jpg";
 import promo2 from "../images/promos/index-promo-img-08.jpg";
 import promo3 from "../images/promos/index-promo-img-09.jpg";
-import Description from "../components/Description";
-import Trending from "../components/Trending";
-import Promo from "../components/Promo";
 import bestImage1 from "../images/bestselling/p1.jpg";
 import bestImage2 from "../images/bestselling/p9.jpg";
-import bestImage3 from "../images/bestselling/p3.jpg";
+import bestImage3 from "../images/bestselling/p2.jpg";
 import bestImage4 from "../images/bestselling/p4.jpg";
 import bestImage5 from "../images/bestselling/p5.jpg";
 import bestImage6 from "../images/bestselling/p6.jpg";
 import bestImage7 from "../images/bestselling/p7.jpg";
 import bestImage8 from "../images/bestselling/p8.jpg";
+import bestImage1d from "../images/bestselling/product-02.jpg";
+import bestImage2d from "../images/bestselling/product-46.jpg";
+import bestImage3d from "../images/bestselling/product.jpg";
+import bestImage4d from "../images/bestselling/product-16.jpg";
+import bestImage5d from "../images/bestselling/product-18.jpg";
+import bestImage6d from "../images/bestselling/product-19.jpg";
+import bestImage7d from "../images/bestselling/product-33.jpg";
+import bestImage8d from "../images/bestselling/product-41.jpg";
 import Blog from "../components/blog";
 import blog1 from "../images/blog/b1.jpg";
 import blog2 from "../images/blog/b2.jpg";
@@ -188,84 +194,90 @@ const HomePage = () => {
             description="Flared Shift Dress"
             price="$12"
             image={bestImage1}
-            image2={product1}
+            image2={bestImage1d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage2}
-            image2={product2}
+            image2={bestImage2d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage3}
-            image2={product3}
+            image2={bestImage3d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage4}
-            image2={product4}
+            image2={bestImage4d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage5}
-            image2={product5}
+            image2={bestImage5d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage6}
-            image2={product6}
+            image2={bestImage6d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage7}
-            image2={product7}
+            image2={bestImage7d}
           />
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
             price="$12"
             image={bestImage8}
-            image2={product8}
+            image2={bestImage8d}
           />
         </div>
       </div>
-      <div className="main-blog">
-        <Blog
-          image={blog1}
-          title="FASHION"
-          subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-          description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+      <div className="main-content">
+        <div className="main-section">
+          <h4>LATES FROM BLOG</h4>
+          <h5>THE FRESHEST AND MOST EXCITING NEWS</h5>
+        </div>
+        <div className="main-blog">
+          <Blog
+            image={blog3}
+            title="FASHION"
+            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
+            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          subdescription="by ADRIAN on January 14, 2017"
-        />
-        <Blog
-          image={blog2}
-          title="FASHION"
-          subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-          description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            subdescription="by ADRIAN on January 14, 2017"
+          />
+          <Blog
+            image={blog2}
+            title="FASHION"
+            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
+            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          subdescription="by ADRIAN on January 14, 2017"
-        />
-        <Blog
-          image={blog3}
-          title="FASHION"
-          subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-          description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            subdescription="by ADRIAN on January 14, 2017"
+          />
+          <Blog
+            image={blog1}
+            title="FASHION"
+            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
+            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          subdescription="by ADRIAN on January 14, 2017"
-        />
+            subdescription="by ADRIAN on January 14, 2017"
+          />
+        </div>
       </div>
       <Follow />
     </div>
