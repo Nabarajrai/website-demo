@@ -1,14 +1,13 @@
 import HomePage from "../src/pages/HomePage";
-import Header from "../src/components/header";
-import Footer from "../src/components/Footer";
+import Layout from "../src/components/Layout";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <HomePage />
-      <Footer />
-    </div>
+    <>
+      <Layout>
+        <HomePage />
+      </Layout>
+    </>
   );
 }
 

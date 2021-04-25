@@ -8,10 +8,10 @@ import {
   Input,
 } from "reactstrap";
 import Section from "../components/section";
+import "../styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
-import "../styles/footer.css";
 
 const Footers = () => {
   return (

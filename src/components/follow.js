@@ -1,7 +1,7 @@
 import React from "react";
+import "../styles/follow.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruckPickup } from "@fortawesome/free-solid-svg-icons/faTruckPickup";
-import "../styles/follow.css";
 
 const follow = () => {
   return (

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 130px;
+  letter-spacing: 0.9;
 }
 
 .blog-description-section {
@@ -14,12 +15,15 @@
   border-radius: 5px;
   max-width: 90%;
   line-height: 1.5;
+  letter-spacing: 0.9;
 }
 .blog-description-section:hover {
-  /* padding: 10px 10px 0 10px; */
-
   padding-top: 10px;
   transition: padding 0.1s;
+}
+.blog-description-section span {
+  font-size: 12px;
+  opacity: 0.5;
 }
 .blog-description-section h4 {
   font-size: 13px;
@@ -27,8 +31,8 @@
   margin-top: 30px;
 }
 .blog-description-section h1 {
-  font-size: 22px;
-  font-weight: 400px;
+  font-size: 20px;
+  font-weight: 300px;
   max-width: 300px;
   margin: auto;
 }
