@@ -1,18 +1,65 @@
-h2 {
-  color: blue;
-  text-transform: lowercase;
-  font-size: 25px;
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
+
+.headers-icons .icons-font {
+  margin: 0 3rem;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-toggler {
+  font-size: 3.9rem;
+}
+
+@media (max-width: 575.98px) {
+  .headers-icons .icons-font {
+    font-size: 4rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 4rem;
+  }
+
+  html {
+    font-size: 500.5%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html {
+    font-size: 20.5%;
+  }
+}
+
+/* @media (max-width: 576px) {
+  html {
+    font-size: 6000.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 991.98px) {
+  html {
+    font-size: 20%;
+  }
+}
+/*
 .header-item {
   font-size: 14px;
   text-transform: uppercase !important;
 }
-
-.headers-icons {
+.icons-times {
+  font-size: 40rem;
+}
+.Navbars-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.headers-icons .icons-font {
-  margin: 10px;
-}
+
+ */

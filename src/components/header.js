@@ -43,15 +43,15 @@ const Header = (props) => {
       color="white"
       expand="md"
       className={className({
-        "navbar-inverse": shouldChangeNavbarStyle,
+        shouldChangeNavbarStyle,
       })}
       light
     >
       <Container>
-        <div className="navbar-logo-container logo">
+        <div className="Navbar">
           {!showNavbarLogo && (
             <NavbarBrand href="/">
-              <h2>Wikee</h2>
+              <h2 className="Navbar__title">Wikee</h2>
             </NavbarBrand>
           )}
         </div>
@@ -59,13 +59,13 @@ const Header = (props) => {
         <NavbarToggler className="mr-auto" onClick={toggle}>
           {opend ? (
             <FontAwesomeIcon
-              className="ion-times"
+              className="icons-times"
               color="black"
               icon={faBars}
             />
           ) : (
             <FontAwesomeIcon
-              className="icon-times"
+              className="icons-times"
               color="black"
               icon={faTimes}
             />
@@ -73,7 +73,7 @@ const Header = (props) => {
         </NavbarToggler>
 
         <Collapse isOpen={!opend} navbar>
-          <Nav className="header-item" navbar>
+          <Nav className="Navbar-list" navbar>
             <NavItem>
               <NavLink to="/">Home</NavLink>
             </NavItem>

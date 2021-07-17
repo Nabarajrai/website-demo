@@ -1,14 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
+import Slick from "../components/Slick";
 import Description from "../components/Description";
 import Trending from "../components/Trending";
 import Promo from "../components/Promo";
-import SlideImage from "../components/Slider";
 import "../styles/homePage.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import slide1 from "../images/slide/slide-01.jpg";
-import slide2 from "../images/slide/slide-02.jpg";
+
+//it shows shame class name due to time(less time).I mean I haven't given proper name convinence of image.and I have aslo incuded some name like image name
 import image1 from "../images/promo/index-promo-img-01.jpg";
 import image2 from "../images/promo/index-promo-img-02.jpg";
 import image3 from "../images/promo/index-promo-img-03.jpg";
@@ -50,53 +47,11 @@ import bestImage5d from "../images/bestselling/product-18.jpg";
 import bestImage6d from "../images/bestselling/product-19.jpg";
 import bestImage7d from "../images/bestselling/product-33.jpg";
 import bestImage8d from "../images/bestselling/product-41.jpg";
-import Blog from "../components/blog";
-import blog1 from "../images/blog/b1.jpg";
-import blog2 from "../images/blog/b2.jpg";
-import blog3 from "../images/blog/b3.jpg";
-import Follow from "../components/follow";
 
 const HomePage = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
-  };
   return (
     <div>
-      <div className="slider">
-        <Slider {...settings}>
-          <SlideImage
-            title="Multipurpose"
-            description1="30 skins,powerful features,great support,exclusive offer"
-            description="Premium Html template"
-            img={slide1}
-            color="blue"
-            color1="black"
-          />
-          <SlideImage
-            title="Ready to"
-            description1="optimized for speed website that sell"
-            description="Use Unque demos"
-            img={slide2}
-            color="white"
-            color1="white"
-          />
-          <SlideImage
-            title="Oberlo"
-            description1="Oberlo allows you to easily import"
-            description="Find product for shop store"
-            img={slide1}
-            color="blue"
-            color1="black"
-          />
-        </Slider>
-      </div>
+      <Slick />
       <div className="description-grid">
         <Description className="sale" title="Sale" image={image1} />
         <Description className="new" title="New" image={image2} />
@@ -109,13 +64,13 @@ const HomePage = () => {
         />
         <Description className="shoes" title="Shoes" image={image6} />
       </div>
-      <div>
-        <div className="trending-description">
-          <h1>TRENDING</h1>
-          <p>TOP VIEW IN THIS WEEK</p>
+      <div className="Trending">
+        <div className="Trending__title">
+          <h1 className="Trending_title--h1">TRENDING</h1>
+          <p className="Trending__title--p">TOP VIEW IN THIS WEEK</p>
         </div>
 
-        <div className="trending-grid">
+        <div className="Trending__grid">
           <Trending
             title="TSHIRT"
             description="Flared Shift Dress"
@@ -174,17 +129,18 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="promo-grid">
+      <div className="Promo-grid">
         <Promo
-          title="GET UP TO 5O% OFF"
+          title=" 5O% OFF"
           description="FALL WINTER CLEARENCE SALES"
           image={promo1}
         />
         <Promo title="SUMMAR 2018" description="NEW ARRIVALS" image={promo2} />
         <Promo title="NEW COLLECTION" description="HANDBAGS" image={promo3} />
       </div>
-      <div className="bestselling-header">
-        <div className="selling-description">
+
+      <div className="Bestselling">
+        <div className="Bestselling__header">
           <h3>BEST SELLER</h3>
           <h5>TOP SALE IN THIS WEEK</h5>
         </div>
@@ -247,39 +203,6 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="main-content">
-        <div className="main-section">
-          <h4>LATES FROM BLOG</h4>
-          <h5>THE FRESHEST AND MOST EXCITING NEWS</h5>
-        </div>
-        <div className="main-blog">
-          <Blog
-            image={blog3}
-            title="FASHION"
-            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            subdescription="by ADRIAN on January 14, 2017"
-          />
-          <Blog
-            image={blog2}
-            title="FASHION"
-            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            subdescription="by ADRIAN on January 14, 2017"
-          />
-          <Blog
-            image={blog1}
-            title="FASHION"
-            subtitle="DOLORE EU FUGIATNULLA PARIATUR"
-            description="          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            subdescription="by ADRIAN on January 14, 2017"
-          />
-        </div>
-      </div>
-      <Follow />
     </div>
   );
 };

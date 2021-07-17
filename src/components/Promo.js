@@ -3,11 +3,11 @@ import "../styles/promo.css";
 
 const Promo = ({ title, description, image }) => {
   return (
-    <div className="promo">
-      <div className="promo-image">
+    <div className="Promo">
+      <div className="Promo__image">
         <img className="img-fluid" src={image} alt={title} />
       </div>
-      <div className="promo-description">
+      <div className="Promo__description">
         <h3>{description}</h3>
         <h1>{title}</h1>
       </div>
