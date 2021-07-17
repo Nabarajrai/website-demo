@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Popup from "./Popup";
 import { Button } from "reactstrap";
 import Section from "../components/section";
 import "../styles/slider.css";
 
 const Slider = ({ title, color, color1, img, description1, description }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+    console.log("click");
+  };
   return (
     <Section container={false}>
       <div className="Slider">
@@ -29,9 +35,25 @@ const Slider = ({ title, color, color1, img, description1, description }) => {
             >
               {description1}
             </p>
-            <Button className="Slider__button" size="large" color="primary">
+            <Button
+              onClick={togglePopup}
+              className="Slider__button"
+              size="large"
+              color="primary"
+            >
               Shop Now !
             </Button>
+            {isOpen && (
+              <Popup
+                content={
+                  <>
+                    <b>Call to Action demo</b>
+                    <p>Welcome on CTA</p>
+                  </>
+                }
+                handleClose={togglePopup}
+              />
+            )}
           </div>
         </div>
         <div className="Slider__image">
